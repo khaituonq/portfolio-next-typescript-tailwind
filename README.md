@@ -1,5 +1,5 @@
 # Ecommerce Web Application
-![Krypt](image.png)
+![Krypt](image-2.png)
 
 ## Overview
 This project is serves as a portfolio. The website is built with modern web technologies and features a responsive design that works on desktop and mobile devices. The goal of this project is to provide users with a seamless shopping experience and a user-friendly interface.
