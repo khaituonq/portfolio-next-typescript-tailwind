@@ -31,7 +31,8 @@ const Button: React.FC<ButtonProps> = ({
         justify-center
         gap-2 
         rounded-3xl 
-        px-8
+        sm:px-8
+        px-6
         py-3
         text-color1
         cursor-pointer
@@ -42,7 +43,7 @@ const Button: React.FC<ButtonProps> = ({
         ${color ? 'bg-secondary' : 'bg-button'}
       `}
     >
-      <div className="text-l font-bold">{label}</div>
+      <div className="sm:text-lg text-sm font-bold">{label}</div>
       {Icon && (
         <Icon size={24} />
       )}

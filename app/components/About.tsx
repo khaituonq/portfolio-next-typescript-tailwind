@@ -48,7 +48,7 @@ const About = () => {
 
         <MusicMote className="absolute md:-top-40 -top-20 left-0" />
         <LightBulb className="absolute lg:block hidden -top-3 -right-20" />
-        <DoodleArrowUp className="absolute md:bottom-20 bottom-0 left-1/2" />
+        <DoodleArrowUp className="absolute sm:block hidden md:bottom-20 bottom-0 left-1/2" />
       </div>
 
       <div className="w-7/12 relative lg:block hidden">

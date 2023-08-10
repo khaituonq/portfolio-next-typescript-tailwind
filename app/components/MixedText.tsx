@@ -18,7 +18,7 @@ const MixedText: React.FC<MixedTextProps> = ({
     <div
       className={`
         font-bold
-        ${large ? 'lg:text-7xl sm:text-7xl text-6xl' : 'text-5xl'}
+        ${large ? 'lg:text-7xl sm:text-7xl text-5xl' : 'sm:text-5xl text-4xl'}
         ${large ? 'uppercase' : ''}
       `}
     >

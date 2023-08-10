@@ -53,7 +53,7 @@ const Overview = () => {
           large
           newLine
         />
-        <div className="flex flex-row items-center gap-6 mt-16 lg:justify-start justify-center">
+        <div className="flex flex-row items-center sm:gap-6 gap-4 mt-16 lg:justify-start justify-center">
           <Button label="Hire me" color onClick={() => router.push("#contact")}/>
           <Button
             label="Download CV"

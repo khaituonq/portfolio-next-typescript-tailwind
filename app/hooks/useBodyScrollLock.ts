@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { isMobile } from 'react-device-detect'
 
 const useBodyScrollLock = (): [boolean, () => void] => {
   const [isLocked, setIsLocked] = useState<boolean>(false)
@@ -7,8 +8,10 @@ const useBodyScrollLock = (): [boolean, () => void] => {
 
   useEffect(() => {
     const bodyStyle: CSSStyleDeclaration = document.body.style
-    bodyStyle.overflowY = isLocked ? 'hidden' : 'auto'
-    bodyStyle.paddingRight = isLocked ? '17px' : '0'
+    if (!isMobile) {
+      bodyStyle.overflowY = isLocked ? 'hidden' : 'auto'
+    }
+   
 
     return () => {
       bodyStyle.overflowY = 'auto'
