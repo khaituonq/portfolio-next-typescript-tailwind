@@ -1,7 +1,8 @@
 "use client";
 
 import { FaBars } from "react-icons/fa";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { Oswald } from "next/font/google"
 
 import Container from "./Container";
 import NavButton from "./navbar/buttons/NavButton";
@@ -9,6 +10,11 @@ import NavbarMobile from "./navbar/NavbarMobile";
 import { navLinks } from "@/app/constants";
 import useScrollDirection from "../hooks/useScrollDirection";
 import useBodyScrollLock from "../hooks/useBodyScrollLock";
+
+const oswald = Oswald({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"]
+})
 
 const Navbar = () => {
   const [showNavbarMB, setShowNavbarMB] = useState(false);
@@ -45,7 +51,7 @@ const Navbar = () => {
             py-6
           `}
         >
-          <div className="text-color1 text-2xl font-bold">SaulDesign</div>
+          <div className={`${oswald.className} text-color1 text-2xl font-bold`}>SaulDesign</div>
 
           <div
             onClick={handleToggleNavBarMB}
