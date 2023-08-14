@@ -3,7 +3,7 @@
 import React from "react";
 import { FaTimes } from "react-icons/fa"
  
-import NavButton from "./buttons/NavButton";
+import NavButton from "../buttons/NavButton";
 import { navLinks } from "@/app/constants";
 
 interface NavbarMobileProps {

@@ -37,84 +37,40 @@ const images = {
 
 const projects = [
   {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        id: 'all',
-        title: 'All',
-        color: 'text-[#e8d44d]'
-      },
-      {
-        id: 'javascript',
-        title: 'Javascript',
-        color: 'text-[#e8d44d]'
-      },
-      {
-        id: 'html',
-        title: 'HTML',
-        color: 'text-[#dd4b25]'
-      },
-      {
-        id: 'css',
-        title: 'CSS',
-        color: 'text-[#254bdd]'
-      },
-    ],
-    image: 'demo-card.jpg',
-    source_code_link: "https://github.com/",
-    project_link: "https://github.com/",
+    name: "Aranoz API",
+    description: "This is an api of Aranoz, it is an ecommerce website, using modern technologies as ExpressJS, Mongoose",
+    tagsId: ['javascript', 'express_js', 'node_js', 'mongodb'],
+    image: 'aranoz-api',
+    source_code_link: "https://github.com/khaituonq/mern-amazon/tree/main/backend",
+    project_link: "https://aranoz-api.onrender.com/api/product",
+    order: 4
   },
   {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        id: 'javascript',
-        title: 'Javascript',
-        color: 'text-[#e8d44d]'
-      },
-      {
-        id: 'html',
-        title: 'HTML',
-        color: 'text-[#dd4b25]'
-      },
-      {
-        id: 'css',
-        title: 'CSS',
-        color: 'text-[#254bdd]'
-      },
-    ],
-    image: 'demo-card.jpg',
-    source_code_link: "https://github.com/",
-    project_link: "https://github.com/",
+    name: "Aranoz ecommerce",
+    description: "This project is an eCommerce website that allows users to browse and purchase products online. The website is built with modern web technologies and features a responsive design that works on desktop and mobile devices. The goal of this project is to provide users with a seamless shopping experience and a user-friendly interface.",
+    tagsId: ['html', 'css', 'javascript', 'express_js', 'node_js', 'mongodb', 'react_js', 'sass'],
+    image: 'aranoz-website',
+    source_code_link: "https://github.com/khaituonq/aranoz-ecommerce",
+    project_link: "https://aranoz-ecommerce.vercel.app/",
+    order: 2
   },
   {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        id: 'javascript',
-        title: 'Javascript',
-        color: 'text-[#e8d44d]'
-      },
-      {
-        id: 'html',
-        title: 'HTML',
-        color: 'text-[#dd4b25]'
-      },
-      {
-        id: 'css',
-        title: 'CSS',
-        color: 'text-[#254bdd]'
-      },
-    ],
-    image: 'demo-card.jpg',
-    source_code_link: "https://github.com/",
-    project_link: "https://github.com/",
+    name: "Wall store",
+    description: "This is an ecommerce website, using modern technologies as ExpressJS, NextJS, MongoDB, TailwindCSS",
+    tagsId: ['html', 'css', 'javascript', 'express_js', 'node_js', 'mongodb', 'react_js', 'next_js', 'tailwind_css'],
+    image: 'wall-store',
+    source_code_link: "https://github.com/khaituonq/wall-store",
+    project_link: "https://wall-store.vercel.app/",
+    order: 3
+  },
+  {
+    name: "My portfolio",
+    description: "This is my portfolio",
+    tagsId: ['html', 'css', 'javascript', 'next_js', 'react_js', 'tailwind_css'],
+    image: 'my-portfolio',
+    source_code_link: "https://github.com/khaituonq/portfolio-next-typescript-tailwind",
+    project_link: "https://portfolio-next-typescript-tailwind-fawn.vercel.app/",
+    order: 1
   },
 ];
 
@@ -153,62 +109,62 @@ const categories = [
   {
     id: 'javascript',
     title: 'Javascript',
-    color: '#e8d44d'
+    color: 'text-[#e8d44d]'
   },
   {
     id: 'html',
     title: 'HTML',
-    color: '#dd4b25'
+    color: 'text-[#dd4b25]'
   },
   {
     id: 'css',
     title: 'CSS',
-    color: '#254bdd'
+    color: 'text-[#254bdd]'
   },
   {
     id: 'react_js',
     title: 'ReactJS',
-    color: '#087ea4'
+    color: 'text-[#087ea4]'
   },
   {
     id: 'next_js',
     title: 'NextJS',
-    color: '#000000'
+    color: 'text-[#000000]'
   },
   {
     id: 'node_js',
     title: 'NodeJS',
-    color: '#026e00'
+    color: 'text-[#026e00]'
   },
   {
     id: 'express_js',
     title: 'ExpressJS',
-    color: '#8dbf40'
+    color: 'text-[#8dbf40]'
   },
   {
     id: 'mongodb',
     title: 'mongoDB',
-    color: '#116149'
+    color: 'text-[#116149]'
   },
   {
     id: 'mysql',
-    title: 'mySQL', 
-    color: '#3e6e93'
+    title: 'mySQL',
+    color: 'text-[#3e6e93]'
   },
   {
     id: 'sass',
     title: 'Sass',
-    color: '#bf4080'
+    color: 'text-[#bf4080]'
   },
   {
-    id: 'tailwind_css', 
+    id: 'tailwind_css',
     title: 'TailwindCSS',
-    color: '#38bdf8'
+    color: 'text-[#38bdf8]'
   },
   {
     id: 'bootstrap',
     title: 'Bootstrap',
-    color: '#7532fa'
+    color: 'text-[#7532fa]'
   },
 ];
 

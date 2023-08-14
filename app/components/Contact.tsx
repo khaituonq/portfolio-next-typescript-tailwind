@@ -8,7 +8,7 @@ import { useState } from "react";
 import { images } from "../constants";
 import Input from "./Input";
 import MixedText from "./MixedText";
-import Button from "./navbar/buttons/Button";
+import Button from "./buttons/Button";
 import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
 

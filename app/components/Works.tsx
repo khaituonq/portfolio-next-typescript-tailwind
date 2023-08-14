@@ -1,12 +1,11 @@
 "use client";
 
 import { useCallback, useState } from "react";
-import Image from "next/image";
 import ScrollContainer from "react-indiana-drag-scroll";
 
 import Container from "./Container";
 import MixedText from "./MixedText";
-import Button from "./navbar/buttons/Button";
+import Button from "./buttons/Button";
 import ProjectCard from "./ProjectCard";
 import { categories, projects } from "../constants";
 import EmptyState from "./EmptyState";
@@ -14,45 +13,37 @@ import EmptyState from "./EmptyState";
 const Works = () => {
   const [activeFilter, setActiveFilter] = useState("all");
 
-  const handleProjects = useCallback(() => {
+  const getTagsWithTagId = useCallback(() => {
+    return projects.map((project) => ({
+      ...project,
+      tags: project.tagsId.map((tagId) =>
+        categories.find((category) => category.id === tagId)
+      ),
+    }));
+  }, [categories, projects]);
+
+  const handleFilterProjects = useCallback(() => {
     if (activeFilter === "all") {
-      return projects;
+      return getTagsWithTagId();
     } else {
-      return projects.filter((project) => {
-        return project.tags.some((tag) => tag.id === activeFilter);
-      });
+      return getTagsWithTagId().filter((project) =>
+        project.tags.some((tag: any) => tag.id === activeFilter)
+      );
     }
   }, [activeFilter]);
 
-  const newProjects = handleProjects();
+  const newProjects = handleFilterProjects().sort((a, b) => a.order - b.order);
 
   return (
     <div
       id="work"
       className=" 
-        lg:h-screen
         w-full
-        lg:relative
         static
       "
     >
-      <Image
-        fill
-        className="
-          absolute 
-          inset-0 
-          w-full 
-          h-full 
-          object-cover
-          hidden
-          lg:block
-        "
-        src="/images/svg/doodle-mixed-full.svg"
-        alt="Image"
-      />
       <div
         className="
-          lg:absolute
           static
           w-full
           h-full

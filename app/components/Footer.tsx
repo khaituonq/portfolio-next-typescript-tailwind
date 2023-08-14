@@ -1,9 +1,9 @@
 "use client";
 
 import { navLinks } from "@/app/constants";
-import NavButton from "./navbar/buttons/NavButton";
+import NavButton from "./buttons/NavButton";
 import { socialMedias } from "@/app/constants";
-import SocialButton from "./navbar/buttons/SocialButton";
+import SocialButton from "./buttons/SocialButton";
 
 const Footer = () => {
   return (

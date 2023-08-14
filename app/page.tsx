@@ -17,7 +17,7 @@ export default function Home() {
       </Container>
       <hr className="text-border md:mt-20 md:mb-0 my-20" />
       <Works />
-      <hr className="text-border md:mb-20 lg:mt-0 my-20" />
+      <hr className="text-border md:mb-20 my-20" />
       <Container>
         <Contact />
       </Container>

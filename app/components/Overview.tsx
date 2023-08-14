@@ -6,7 +6,7 @@ import { saveAs } from "file-saver";
 import { v4 as uuidv4} from 'uuid'
 
 import MixedText from "./MixedText";
-import Button from "./navbar/buttons/Button";
+import Button from "./buttons/Button";
 import { images } from "../constants";
 
 const Overview = () => {

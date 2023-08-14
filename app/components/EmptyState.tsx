@@ -1,6 +1,6 @@
 "use client";
 
-import Button from "./navbar/buttons/Button";
+import Button from "./buttons/Button";
 
 interface EmptyStateProps {
   title?: string;

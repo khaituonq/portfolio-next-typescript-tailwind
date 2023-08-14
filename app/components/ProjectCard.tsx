@@ -40,14 +40,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
       "
       >
         <Image
-          onClick={() => handleOpen(data.source_code_link)}
+          onClick={() => handleOpen(data.project_link)}
           fill
           alt="Card"
           className="h-full w-full object-cover cursor-pointer"
-          src={`/images/${data.image}`}
+          src={`/images/project/${data.image}.png`}
         />
         <div
-          onClick={() => handleOpen(data.source_code_link)}
+          onClick={() => handleOpen(data.project_link)}
           className="
             absolute 
             rounded-full 
@@ -77,12 +77,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
         {data.name}
       </div>
 
-      <div className="text-sm text-color2">{data.description}</div>
+      <div className="text-sm text-color2 line-clamp-4 h-20 w-full">
+        {data.description}
+      </div>
 
-      <div className="flex flex-row gap-2">
-        {data.tags.map((item: any) => (
-          <div key={item.id} className={`${item.color} text-sm font-medium`}>
-            <em className="font-light">#</em>{item.title}
+      <div className="flex flex-row gap-2 flex-wrap">
+        {data.tags.map((tag: any) => (
+          <div key={tag.id} className={`${tag.color} text-sm font-medium`}>
+            <em className="font-light">#</em>
+            {tag.title}
           </div>
         ))}
       </div>

@@ -1,4 +1,4 @@
-# Ecommerce Web Application
+# My Portfolio Web Application
 ![Krypt](public/images/banner.png)
 
 ## Overview

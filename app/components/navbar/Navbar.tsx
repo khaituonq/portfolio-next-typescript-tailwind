@@ -4,12 +4,12 @@ import { FaBars } from "react-icons/fa";
 import { useState } from "react";
 import { Oswald } from "next/font/google"
 
-import Container from "./Container";
-import NavButton from "./navbar/buttons/NavButton";
-import NavbarMobile from "./navbar/NavbarMobile";
+import Container from "../Container";
+import NavButton from "../buttons/NavButton";
+import NavbarMobile from "./NavbarMobile";
 import { navLinks } from "@/app/constants";
-import useScrollDirection from "../hooks/useScrollDirection";
-import useBodyScrollLock from "../hooks/useBodyScrollLock";
+import useScrollDirection from "../../hooks/useScrollDirection";
+import useBodyScrollLock from "../../hooks/useBodyScrollLock";
 
 const oswald = Oswald({
   subsets: ["latin"],
