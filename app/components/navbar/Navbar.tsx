@@ -6,7 +6,7 @@ import { Oswald } from "next/font/google"
 
 import Container from "../Container";
 import NavButton from "../buttons/NavButton";
-import NavbarMobile from "./NavbarMobile";
+import NavbarMobile from "./Sidebar";
 import { navLinks } from "@/app/constants";
 import useScrollDirection from "../../hooks/useScrollDirection";
 import useBodyScrollLock from "../../hooks/useBodyScrollLock";

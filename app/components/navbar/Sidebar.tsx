@@ -6,12 +6,12 @@ import { FaTimes } from "react-icons/fa"
 import NavButton from "../buttons/NavButton";
 import { navLinks } from "@/app/constants";
 
-interface NavbarMobileProps {
+interface SidebarProps {
   showed: boolean;
   onClick: () => void;
 }
 
-const NavbarMobile: React.FC<NavbarMobileProps> = ({ showed, onClick }) => {
+const Sidebar: React.FC<SidebarProps> = ({ showed, onClick }) => {
   return (
     <div
       className={`
@@ -59,4 +59,4 @@ const NavbarMobile: React.FC<NavbarMobileProps> = ({ showed, onClick }) => {
   );
 };
 
-export default NavbarMobile;
+export default Sidebar;
