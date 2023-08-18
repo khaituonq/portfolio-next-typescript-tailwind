@@ -51,7 +51,7 @@ const Navbar = () => {
             py-6
           `}
         >
-          <div className={`${oswald.className} text-color1 text-2xl font-bold`}>SaulDesign</div>
+          <div className={`${oswald.className} text-color1 text-2xl font-bold`}>khaituonq</div>
 
           <div
             onClick={handleToggleNavBarMB}

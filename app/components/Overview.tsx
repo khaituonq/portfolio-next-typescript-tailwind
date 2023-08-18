@@ -48,8 +48,8 @@ const Overview = () => {
         <DoodleArrowDown className="lg:block hidden absolute -left-20 top-10" />
 
         <MixedText
-          label="Creative UI"
-          secondaryLabel="Designer"
+          label="Fullstack"
+          secondaryLabel="Developer"
           large
           newLine
         />
