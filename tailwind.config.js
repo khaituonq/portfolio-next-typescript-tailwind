@@ -25,7 +25,8 @@ module.exports = {
       card: 'rgba(57, 62, 70, 50%)',
       error: '#dc2626',
       white: '#fff',
-      black: '#000'
+      black: '#000',
+      overlay: 'rgba(34, 40, 49, 0.21)'
     }
   },
   plugins: [],

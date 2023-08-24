@@ -37,45 +37,46 @@ const images = {
 
 const projects = [
   {
-    name: "Aranoz API",
-    description: "This is an api of Aranoz, it is an ecommerce website, using modern technologies as ExpressJS, Mongoose",
-    tagsId: ['javascript', 'express_js', 'node_js', 'mongodb'],
-    image: 'aranoz-api',
-    source_code_link: "https://github.com/khaituonq/mern-amazon/tree/main/backend",
-    project_link: "https://aranoz-api.onrender.com/api/product",
-    order: 4
-  },
-  {
     name: "Aranoz ecommerce",
-    description: "This project is an eCommerce website that allows users to browse and purchase products online. The website is built with modern web technologies and features a responsive design that works on desktop and mobile devices. The goal of this project is to provide users with a seamless shopping experience and a user-friendly interface.",
+    description: "This project is an online store where customers may browse and make purchases. The website has a responsive design that functions on desktop and mobile devices and was created using contemporary web technology. Users will receive a seamless purchasing experience and a user-friendly interface as a result of this project.",
     tagsId: ['html', 'css', 'javascript', 'express_js', 'node_js', 'mongodb', 'react_js', 'sass'],
     image: 'aranoz-website',
     source_code_link: "https://github.com/khaituonq/aranoz-ecommerce",
     project_link: "https://aranoz-ecommerce.vercel.app/",
-    order: 2
+    order: 3
   },
   {
     name: "Wall store",
-    description: "This is an ecommerce website, using modern technologies as ExpressJS, NextJS, MongoDB, TailwindCSS",
+    description: "This project is an online store where customers may browse and make purchases. The website has a responsive design that functions on desktop and mobile devices and was created using contemporary web technology. Users will receive a seamless purchasing experience and a user-friendly interface as a result of this project.",
     tagsId: ['html', 'css', 'javascript', 'express_js', 'node_js', 'mongodb', 'react_js', 'next_js', 'tailwind_css'],
     image: 'wall-store',
     source_code_link: "https://github.com/khaituonq/wall-store",
     project_link: "https://wall-store.vercel.app/",
-    order: 3
+    order: 4
   },
   {
     name: "My portfolio",
-    description: "This is my portfolio",
+    description: "This webpage serves as my online resume and contains details about my job and contact information.",
     tagsId: ['html', 'css', 'javascript', 'next_js', 'react_js', 'tailwind_css'],
     image: 'my-portfolio',
     source_code_link: "https://github.com/khaituonq/portfolio-next-typescript-tailwind",
     project_link: "https://portfolio-next-typescript-tailwind-fawn.vercel.app/",
     order: 1
   },
+  {
+    name: "Airbnb",
+    description: "This website allows for online booking and renting, it includes features like adding rental homes to favourites, deleting them, creating new rentals, and making bookings.",
+    tagsId: ['html', 'css', 'javascript', 'next_js', 'react_js', 'tailwind_css', 'node_js', 'mongodb'],
+    image: 'airbnb',
+    source_code_link: "https://github.com/khaituonq/airbnb_clone",
+    project_link: "https://airbnb-clone-lemon-xi.vercel.app/",
+    order: 2
+  },
 ];
 
-const aboutMe =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+const aboutMe = "Greetings! I'm a seasoned full-stack developer named Tuong. My speciality is creating exceptional websites with attentive design and development. I firmly believe in the power of contemporary technology, and I have particular expertise in using state-of-the-art tools like Next.js, TypeScript, ExpressJS, Tailwind CSS, and MongoDB. I contribute a constant dedication to accuracy and excellence, making sure that every project is a seamless fusion of creativity and usability, from concept to execution. Let's work together to turn your digital concepts into outstanding web experiences."
+
+
 
 const navLinks = [
   {
