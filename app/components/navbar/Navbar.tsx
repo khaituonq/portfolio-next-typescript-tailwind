@@ -6,7 +6,7 @@ import { Oswald } from "next/font/google"
 
 import Container from "../Container";
 import NavButton from "../buttons/NavButton";
-import NavbarMobile from "./Sidebar";
+import Sidebar from "./Sidebar";
 import { navLinks } from "@/app/constants";
 import useScrollDirection from "../../hooks/useScrollDirection";
 import useBodyScrollLock from "../../hooks/useBodyScrollLock";
@@ -17,14 +17,14 @@ const oswald = Oswald({
 })
 
 const Navbar = () => {
-  const [showNavbarMB, setShowNavbarMB] = useState(false);
+  const [showSidebar, setShowSidebar] = useState(false);
 
   const detectScroll = useScrollDirection();
 
   const [isLocked, toggle] = useBodyScrollLock();
 
-  const handleToggleNavBarMB = () => {
-    setShowNavbarMB((value) => !value);
+  const handleToggleSidebar = () => {
+    setShowSidebar((value) => !value);
     toggle();
   };
 
@@ -54,13 +54,13 @@ const Navbar = () => {
           <div className={`${oswald.className} text-color1 text-2xl font-bold`}>khaituonq</div>
 
           <div
-            onClick={handleToggleNavBarMB}
+            onClick={handleToggleSidebar}
             className="text-color1 cursor-pointer sm:hidden block"
           >
             <FaBars size={20} />
           </div>
 
-          <NavbarMobile showed={showNavbarMB} onClick={handleToggleNavBarMB} />
+          <Sidebar showed={showSidebar} onClick={handleToggleSidebar} />
 
           <div className="flex-row gap-16 sm:flex hidden">
             {navLinks.map((item) => (
