@@ -37,7 +37,7 @@ const Navbar = () => {
         z-40
         duration-300
         bg-primary
-        ${detectScroll === "up" ? "translate-y-0" : "-translate-y-full"}
+        ${detectScroll === "down" ? "-translate-y-full" : "translate-y-0"}
       `}
     >
       <Container>
