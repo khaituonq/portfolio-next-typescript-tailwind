@@ -18,7 +18,6 @@ export async function POST(
     throw Error("Invalid Message")
   }
 
-
   const email = await resend.emails.send({
     from: `Contact Form <my-portfolio@resend.dev>`,
     to: 'khaituong2909@gmail.com',
