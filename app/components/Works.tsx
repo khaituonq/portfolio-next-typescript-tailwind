@@ -35,57 +35,39 @@ const Works = () => {
   const newProjects = handleFilterProjects().sort((a, b) => a.order - b.order);
 
   return (
-    <div
-      id="work"
-      className=" 
-        w-full
-        static
-      "
-    >
-      <div
-        className="
-          static
-          w-full
-          h-full
-        "
-      >
-        <Container>
-          <div className="flex flex-col gap-12 md:pt-40 pt-16">
-            <div className="text-center">
-              <MixedText label="My recent" secondaryLabel="works" />
-            </div>
-
-            <ScrollContainer className="flex flex-row gap-4">
-              {categories.map((item) => (
-                <Button
-                  key={item.id}
-                  label={item.title}
-                  color={item.id === activeFilter}
-                  onClick={() => setActiveFilter(item.id)}
-                />
-              ))}
-            </ScrollContainer>
-
-            {newProjects.length > 0 ? (
-              <div
-                className="
-                  grid 
-                  lg:grid-cols-3 
-                  sm:grid-cols-2 
-                  grid-cols-1 
-                  gap-6
-                "
-              >
-                {newProjects.map((item) => (
-                  <ProjectCard key={item.name} data={item} />
-                ))}
-              </div>
-            ) : (
-              <EmptyState onReset={() => setActiveFilter("all")} />
-            )}
-          </div>
-        </Container>
+    <div id="work" className="w-full h-auto flex flex-col gap-12 md:pt-40 pt-16">
+      <div className="text-center">
+        <MixedText label="My recent" secondaryLabel="works" />
       </div>
+
+      <ScrollContainer className="flex flex-row gap-4">
+        {categories.map((item) => (
+          <Button
+            key={item.id}
+            label={item.title}
+            color={item.id === activeFilter}
+            onClick={() => setActiveFilter(item.id)}
+          />
+        ))}
+      </ScrollContainer>
+
+      {newProjects.length > 0 ? (
+        <div
+          className="
+            grid 
+            lg:grid-cols-3 
+            sm:grid-cols-2 
+            grid-cols-1 
+            gap-6
+          "
+        >
+          {newProjects.map((item) => (
+            <ProjectCard key={item.name} data={item} />
+          ))}
+        </div>
+      ) : (
+        <EmptyState onReset={() => setActiveFilter("all")} />
+      )}
     </div>
   );
 };

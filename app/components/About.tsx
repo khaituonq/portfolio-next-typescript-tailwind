@@ -28,7 +28,7 @@ const About = () => {
     >
       <div
         className="
-          lg:w-3/12
+          lg:w-1/3
           lg:text-left 
           w-full 
           mt-12 

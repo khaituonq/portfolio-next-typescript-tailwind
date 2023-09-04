@@ -4,6 +4,7 @@ import { FiDownload } from "react-icons/fi";
 import { useRouter } from "next/navigation";
 import { saveAs } from "file-saver";
 import { v4 as uuidv4} from 'uuid'
+import { toast } from 'react-hot-toast'
 
 import MixedText from "./MixedText";
 import Button from "./buttons/Button";
@@ -14,6 +15,8 @@ const Overview = () => {
   const { DoodleArrowDown, ArrowDown, DoodleCircle, Developer } = images;
 
   const handleDownloadCV = () => {
+    toast("There isn't CV to download")
+    return
     saveAs('/cv/my_cv.pdf', uuidv4());
   };
 

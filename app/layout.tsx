@@ -26,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} bg-primary`}>
+      <body className={`${poppins.className} bg-primary overflow-x-hidden`}>
         <Navbar />
         <ToasterProvider />
         {children}

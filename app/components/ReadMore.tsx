@@ -23,7 +23,7 @@ const ReadMore: React.FC<ReadMoreProps> = ({
 
   return (
     <div className="text-lg text-color2">
-      {isReadMore ? `${text.slice(0, 200)}...` : text}
+      {isReadMore ? `${text.slice(0, 300)}...` : text}
       <div 
         onClick={handleToggleReadMore}
         className="font-bold text-color1 inline cursor-pointer"
