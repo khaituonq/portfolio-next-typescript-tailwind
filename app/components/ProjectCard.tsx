@@ -43,12 +43,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
           onClick={() => handleOpen(data.project_link)}
           fill
           alt="Card"
-          className="h-full w-full object-cover cursor-pointer"
+          className="h-full w-full cursor-pointer"
           src={`/images/project/${data.image}.png`}
         />
-        <div
-          onClick={() => handleOpen(data.project_link)}
-          className="
+        {data.source_code_link && (
+          <div
+            onClick={() => handleOpen(data.project_link)}
+            className="
             absolute 
             rounded-full 
             w-10 
@@ -65,9 +66,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
             duration-300
             flex
           "
-        >
-          <AiFillGithub size={24} />
-        </div>
+          >
+            <AiFillGithub size={24} />
+          </div>
+        )}
       </div>
 
       <div
