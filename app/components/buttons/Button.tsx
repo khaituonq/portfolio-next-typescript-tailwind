@@ -1,14 +1,14 @@
-'use client'
+"use client";
 
-import { IconType } from "react-icons"
+import { IconType } from "react-icons";
 
 interface ButtonProps {
-  label: string
-  color?: boolean
-  icon?: IconType
-  category?: boolean
-  disabled?: boolean
-  onClick?: () => void
+  label?: string | number;
+  color?: boolean;
+  icon?: IconType;
+  category?: boolean;
+  disabled?: boolean;
+  onClick?: () => void;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -16,10 +16,8 @@ const Button: React.FC<ButtonProps> = ({
   color,
   icon: Icon,
   disabled,
-  onClick
+  onClick,
 }) => {
-
-
   return (
     <button
       disabled={disabled}
@@ -39,16 +37,14 @@ const Button: React.FC<ButtonProps> = ({
         duration-300
         disabled:opacity-70
         disabled:cursor-not-allowed
-        ${color? '  hover:opacity-100' : '  hover:opacity-75'}
-        ${color ? 'bg-secondary' : 'bg-button'}
+        ${color ? "  hover:opacity-100" : "  hover:opacity-75"}
+        ${color ? "bg-secondary" : "bg-button"}
       `}
     >
-      <div className="sm:text-lg text-sm font-bold">{label}</div>
-      {Icon && (
-        <Icon size={24} />
-      )}
+      {label && <div className="sm:text-lg text-sm font-bold">{label}</div>}
+      {Icon && <Icon size={24} />}
     </button>
   );
-}
+};
 
 export default Button;

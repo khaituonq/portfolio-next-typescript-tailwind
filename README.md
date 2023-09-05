@@ -7,6 +7,7 @@ This project is serves as a portfolio. The website is built with modern web tech
 ## Features
 Send email<br>
 Filter categories<br> 
+Pagination<br> 
 
 ## Technologies
 NextJS<br>

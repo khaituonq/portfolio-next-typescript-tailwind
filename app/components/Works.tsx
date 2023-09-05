@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import ScrollContainer from "react-indiana-drag-scroll";
 
 import Container from "./Container";
@@ -9,9 +9,13 @@ import Button from "./buttons/Button";
 import ProjectCard from "./ProjectCard";
 import { categories, projects } from "../constants";
 import EmptyState from "./EmptyState";
+import Pagination from "./Pagination";
+
+const PageSize = 3;
 
 const Works = () => {
   const [activeFilter, setActiveFilter] = useState("all");
+  const [currentPage, setCurrentPage] = useState(1);
 
   const getTagsWithTagId = useCallback(() => {
     return projects.map((project) => ({
@@ -32,10 +36,22 @@ const Works = () => {
     }
   }, [activeFilter]);
 
-  const newProjects = handleFilterProjects().sort((a, b) => a.order - b.order);
+  // Sort order by properties order of item
+  const newProjects = handleFilterProjects().sort((a, b) => b.order - a.order);
+
+  // Format data to implement pagination
+  const currentProjects = useMemo(() => {
+    const firstPageIndex = (currentPage - 1) * PageSize;
+    const lastPageIndex = firstPageIndex + PageSize;
+
+    return newProjects.slice(firstPageIndex, lastPageIndex);
+  }, [currentPage]);
 
   return (
-    <div id="work" className="w-full h-auto flex flex-col gap-12 md:pt-40 pt-16">
+    <div
+      id="work"
+      className="w-full lg:h-screen h-auto flex flex-col gap-12 md:pt-24 pt-12"
+    >
       <div className="text-center">
         <MixedText label="My recent" secondaryLabel="works" />
       </div>
@@ -51,7 +67,7 @@ const Works = () => {
         ))}
       </ScrollContainer>
 
-      {newProjects.length > 0 ? (
+      {currentProjects.length > 0 ? (
         <div
           className="
             grid 
@@ -61,13 +77,19 @@ const Works = () => {
             gap-6
           "
         >
-          {newProjects.map((item) => (
+          {currentProjects.map((item) => (
             <ProjectCard key={item.name} data={item} />
           ))}
         </div>
       ) : (
         <EmptyState onReset={() => setActiveFilter("all")} />
       )}
+      <Pagination
+        currentPage={currentPage}
+        totalCount={newProjects.length}
+        pageSize={PageSize}
+        onPageChange={(page) => setCurrentPage(page)}
+      />
     </div>
   );
 };

@@ -37,40 +37,49 @@ const images = {
 
 const projects = [
   {
-    name: "Aranoz ecommerce",
+    name: "Aranoz",
     description: "This project is an online store where customers may browse and make purchases. The website has a responsive design that functions on desktop and mobile devices and was created using contemporary web technology. Users will receive a seamless purchasing experience and a user-friendly interface as a result of this project.",
     tagsId: ['html', 'css', 'javascript', 'express_js', 'node_js', 'mongodb', 'react_js', 'sass'],
-    image: 'aranoz-website',
+    image: 'aranoz',
     source_code_link: "https://github.com/khaituonq/aranoz-ecommerce",
     project_link: "https://aranoz-ecommerce.vercel.app/",
-    order: 3
+    order: 2
   },
   {
-    name: "Wall store",
+    name: "Wall Store",
     description: "This project is an online store where customers may browse and make purchases. The website has a responsive design that functions on desktop and mobile devices and was created using contemporary web technology. Users will receive a seamless purchasing experience and a user-friendly interface as a result of this project.",
     tagsId: ['html', 'css', 'javascript', 'express_js', 'node_js', 'mongodb', 'react_js', 'next_js', 'tailwind_css'],
-    image: 'wall-store',
+    image: 'wallstore',
     source_code_link: "https://github.com/khaituonq/wall-store",
     project_link: "https://wall-store.vercel.app/",
-    order: 4
+    order: 1
   },
   {
-    name: "My portfolio",
+    name: "My Portfolio",
     description: "This webpage serves as my online resume and contains details about my job and contact information.",
-    tagsId: ['html', 'css', 'javascript', 'next_js', 'react_js', 'tailwind_css'],
+    tagsId: ['html', 'css', 'javascript', 'next_js', 'react_js', 'tailwind_css', 'typescript'],
     image: 'my-portfolio',
     source_code_link: "https://github.com/khaituonq/portfolio-next-typescript-tailwind",
     project_link: "https://portfolio-next-typescript-tailwind-fawn.vercel.app/",
-    order: 1
+    order: 4
   },
   {
     name: "Airbnb",
     description: "This website allows for online booking and renting, it includes features like adding rental homes to favourites, deleting them, creating new rentals, and making bookings.",
-    tagsId: ['html', 'css', 'javascript', 'next_js', 'react_js', 'tailwind_css', 'node_js', 'mongodb'],
+    tagsId: ['html', 'css', 'javascript', 'next_js', 'react_js', 'tailwind_css', 'node_js', 'mongodb', 'typescript'],
     image: 'airbnb',
     source_code_link: "https://github.com/khaituonq/airbnb_clone",
     project_link: "https://airbnb-clone-lemon-xi.vercel.app/",
-    order: 2
+    order: 3
+  },
+  {
+    name: "Paid-ONTime",
+    description: "Paid-ONTime is a cutting-edge platform designed to streamline construction progress payments in Ontario's prompt pay environment. Our user-friendly and efficient system simplifies the process of updating construction progress and automates time-consuming tasks. Built with contractors, owners and subcontractors in mind, our mission is to provide a fast, intuitive, and easy-to-use platform to ensure prompt payment for their hard work. By offering a seamless progress  approval process for owners, Paid-ONTime allows contractors to focus on what they do best: delivering exceptional construction projects. Discover the simplicity and reliability of Paid-ONTime today.",
+    tagsId: ['html', 'css', 'javascript', 'next_js', 'react_js', 'tailwind_css', 'node_js', 'typescript'],
+    image: 'paid-ontime',
+    source_code_link: "",
+    project_link: "https://www.paid-ontime.com/",
+    order: 5
   },
 ];
 
@@ -121,6 +130,11 @@ const categories = [
     id: 'css',
     title: 'CSS',
     color: 'text-[#254bdd]'
+  },
+  {
+    id: 'typescript',
+    title: 'TypeScript',
+    color: 'text-[#2f74c0]'
   },
   {
     id: 'react_js',
