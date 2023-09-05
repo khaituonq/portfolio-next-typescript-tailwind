@@ -10,10 +10,12 @@ import ProjectCard from "./ProjectCard";
 import { categories, projects } from "../constants";
 import EmptyState from "./EmptyState";
 import Pagination from "./Pagination";
+import { useRouter } from "next/navigation";
 
 const PageSize = 3;
 
 const Works = () => {
+  const router = useRouter()
   const [activeFilter, setActiveFilter] = useState("all");
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -46,6 +48,11 @@ const Works = () => {
 
     return newProjects.slice(firstPageIndex, lastPageIndex);
   }, [currentPage]);
+
+  const handleChangePage = (page: number) => {
+    setCurrentPage(page)
+    router.push('#work')
+  }
 
   return (
     <div
@@ -88,7 +95,7 @@ const Works = () => {
         currentPage={currentPage}
         totalCount={newProjects.length}
         pageSize={PageSize}
-        onPageChange={(page) => setCurrentPage(page)}
+        onPageChange={(page) => handleChangePage(page)}
       />
     </div>
   );
