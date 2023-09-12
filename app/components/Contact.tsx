@@ -55,7 +55,7 @@ const Contact = () => {
         w-full 
         h-screen
         md:py-52
-        py-16
+        py-10
         relative
         flex
         md:flex-row
