@@ -79,13 +79,20 @@ const projects = [
     image: 'paid-ontime',
     source_code_link: "",
     project_link: "https://www.paid-ontime.com/",
+    order: 6
+  },
+  {
+    name: "Amante",
+    description: "Based on the existing php-written website, https://www.amante.co.kr/, Amante is a website developed in React and Node.js. The main modification is the Concept room page.",
+    tagsId: ['html', 'css', 'javascript', 'react_js', 'node_js', 'bootstrap', 'mysql', 'express_js'],
+    image: 'amante',
+    source_code_link: "",
+    project_link: "https://shopping.amante.co.kr/shop/concept_room/concept_room_lists",
     order: 5
   },
 ];
 
 const aboutMe = "Greetings! I'm a seasoned full-stack developer named Tuong. My speciality is creating exceptional websites with attentive design and development. I firmly believe in the power of contemporary technology, and I have particular expertise in using state-of-the-art tools like Next.js, TypeScript, ExpressJS, Tailwind CSS, and MongoDB. I contribute a constant dedication to accuracy and excellence, making sure that every project is a seamless fusion of creativity and usability, from concept to execution. Let's work together to turn your digital concepts into outstanding web experiences."
-
-
 
 const navLinks = [
   {
