@@ -10,6 +10,7 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
   const handleOpen = (source: string) => {
+    console.log("Test")
     return window.open(source, "_blank");
   };
 
@@ -48,7 +49,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
         />
         {data.source_code_link && (
           <div
-            onClick={() => handleOpen(data.project_link)}
+            onClick={() => handleOpen(data.source_code_link)}
             className="
             absolute 
             rounded-full 
