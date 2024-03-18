@@ -1,5 +1,8 @@
 'use client'
 
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap"
+
 import MixedText from "./MixedText";
 import ReadMore from "./ReadMore";
 import { images, aboutMe } from '@/app/constants'
@@ -12,6 +15,10 @@ const About = () => {
     MusicMote,
     LightBulb
   } = images
+
+  useGSAP(() => {
+    gsap.to(".doodle-up", { y: 0, repeat: -1, duration: 1, yoyo: true})
+  }, [])
 
   return (
     <div
@@ -48,7 +55,7 @@ const About = () => {
 
         <MusicMote className="absolute md:-top-40 -top-20 left-0" />
         <LightBulb className="absolute lg:block hidden -top-3 -right-20" />
-        <DoodleArrowUp className="absolute sm:block hidden md:bottom-20 bottom-0 left-1/2" />
+        <DoodleArrowUp className="doodle-up translate-y-20 absolute sm:block hidden md:bottom-20 bottom-0 left-1/2" />
       </div>
 
       <div className="w-7/12 relative lg:block hidden">

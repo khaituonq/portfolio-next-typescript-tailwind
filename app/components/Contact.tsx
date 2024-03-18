@@ -4,6 +4,8 @@ import { useForm, SubmitHandler, FieldValues } from "react-hook-form";
 import { BsSend } from "react-icons/bs";
 import axios from 'axios';
 import { useState } from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap"
 
 import { images } from "../constants";
 import Input from "./Input";
@@ -48,6 +50,10 @@ const Contact = () => {
     })
   };
 
+  useGSAP(() => {
+    gsap.to(".doodle-arrow-2", { duration: 1, y: 0, repeat: -1, yoyo: true})
+  }, [])
+
   return (
     <div
       id="contact"
@@ -79,6 +85,8 @@ const Contact = () => {
         <MixedText label="Got a project in" secondaryLabel="mind?" newLine />
         <DoodleArrowDown2
           className="
+            doodle-arrow-2
+            translate-y-20
             absolute
             bottom-1/4
             left-0

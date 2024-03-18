@@ -7,7 +7,7 @@ import Works from "./components/Works";
 
 export default function Home() {
   return (
-    <div className="pt-20">
+    <div className="pt-24">
       <Container>
         <Overview />
       </Container>

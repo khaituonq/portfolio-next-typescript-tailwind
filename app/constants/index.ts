@@ -13,7 +13,7 @@ import DoodleArrowDown2 from '@/public/images/svg/doodle-arrow-down2.svg'
 import DeveloperWalk from '@/public/images/svg/developer-walk.svg'
 import DoodleMail from '@/public/images/svg/doodle-mail.svg'
 import Shadow from '@/public/images/svg/shadow.svg'
-import { AiOutlineGithub, AiOutlineHome, AiOutlineInstagram, AiOutlinePhone, AiOutlineUser } from "react-icons/ai";
+import { AiOutlineGithub, AiOutlineHome, AiOutlineInstagram, AiOutlinePhone, AiOutlineUser, AiFillLinkedin } from "react-icons/ai";
 import { BsPersonWorkspace } from "react-icons/bs";
 import { FiFacebook } from "react-icons/fi";
 
@@ -205,6 +205,11 @@ const socialMedias = [
     id: 'github',
     link: 'https://github.com/khaituonq',
     icon: AiOutlineGithub
+  },
+  {
+    id: 'linkedin',
+    link: 'https://www.linkedin.com/in/khaituonq/',
+    icon: AiFillLinkedin
   }
 ]
 

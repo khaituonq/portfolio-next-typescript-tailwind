@@ -5,6 +5,8 @@ import { useRouter } from "next/navigation";
 import { saveAs } from "file-saver";
 import { v4 as uuidv4} from 'uuid'
 import { toast } from 'react-hot-toast'
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap"
 
 import MixedText from "./MixedText";
 import Button from "./buttons/Button";
@@ -15,10 +17,15 @@ const Overview = () => {
   const { DoodleArrowDown, ArrowDown, DoodleCircle, Developer } = images;
 
   const handleDownloadCV = () => {
-    toast("There isn't CV to download")
-    return
+    // toast("There isn't CV to download")
+    // return
     saveAs('/cv/my_cv.pdf', uuidv4());
   };
+
+  useGSAP(() => {
+    gsap.to(".doodle-down", { opacity: 1, y: 40, duration: 1 })
+    gsap.to(".doodle-circle", { opacity: 1, rotation: 0, duration: 2 })
+  }, [])
 
   return (
     <div
@@ -48,7 +55,7 @@ const Overview = () => {
           pl-4
         "
       >
-        <DoodleArrowDown className="lg:block hidden absolute -left-20 top-10" />
+        <DoodleArrowDown className="doodle-down lg:block hidden absolute -left-20 top-0 opacity-0" />
 
         <MixedText
           label="Fullstack"
@@ -87,7 +94,7 @@ const Overview = () => {
       </div>
 
       <div className="relative flex-1 lg:block hidden">
-        <DoodleCircle className="absolute -right-10" />
+        <DoodleCircle className="doodle-circle rotate-45 absolute -right-10" />
         <Developer className="absolute z-10 bottom-0" />
       </div>
     </div>

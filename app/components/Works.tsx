@@ -57,7 +57,7 @@ const Works = () => {
   return (
     <div
       id="work"
-      className="w-full lg:h-screen h-auto flex flex-col gap-12 md:pt-24 pt-12"
+      className="w-full lg:h-screen h-auto flex flex-col gap-12 md:pt-24 pt-12 "
     >
       <div className="text-center">
         <MixedText label="My recent" secondaryLabel="works" />
