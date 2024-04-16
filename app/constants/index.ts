@@ -45,15 +45,15 @@ const projects = [
     project_link: "https://aranoz-ecommerce.vercel.app/",
     order: 2
   },
-  {
-    name: "Wall Store",
-    description: "This project is an online store where customers may browse and make purchases. The website has a responsive design that functions on desktop and mobile devices and was created using contemporary web technology. Users will receive a seamless purchasing experience and a user-friendly interface as a result of this project.",
-    tagsId: ['html', 'css', 'javascript', 'express_js', 'node_js', 'mongodb', 'react_js', 'next_js', 'tailwind_css'],
-    image: 'wallstore',
-    source_code_link: "https://github.com/khaituonq/wall-store",
-    project_link: "https://wall-store.vercel.app/",
-    order: 1
-  },
+  // {
+  //   name: "Wall Store",
+  //   description: "This project is an online store where customers may browse and make purchases. The website has a responsive design that functions on desktop and mobile devices and was created using contemporary web technology. Users will receive a seamless purchasing experience and a user-friendly interface as a result of this project.",
+  //   tagsId: ['html', 'css', 'javascript', 'express_js', 'node_js', 'mongodb', 'react_js', 'next_js', 'tailwind_css'],
+  //   image: 'wallstore',
+  //   source_code_link: "https://github.com/khaituonq/wall-store",
+  //   project_link: "https://wall-store.vercel.app/",
+  //   order: 1
+  // },
   {
     name: "My Portfolio",
     description: "This webpage serves as my online resume and contains details about my job and contact information.",
@@ -67,7 +67,7 @@ const projects = [
     name: "Airbnb",
     description: "This website allows for online booking and renting, it includes features like adding rental homes to favourites, deleting them, creating new rentals, and making bookings.",
     tagsId: ['html', 'css', 'javascript', 'next_js', 'react_js', 'tailwind_css', 'node_js', 'mongodb', 'typescript'],
-    image: 'airbnb',
+    image: 'rent',
     source_code_link: "https://github.com/khaituonq/airbnb_clone",
     project_link: "https://airbnb-clone-lemon-xi.vercel.app/",
     order: 3
