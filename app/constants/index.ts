@@ -64,7 +64,7 @@ const projects = [
     order: 4
   },
   {
-    name: "Airbnb",
+    name: "Rent",
     description: "This website allows for online booking and renting, it includes features like adding rental homes to favourites, deleting them, creating new rentals, and making bookings.",
     tagsId: ['html', 'css', 'javascript', 'next_js', 'react_js', 'tailwind_css', 'node_js', 'mongodb', 'typescript'],
     image: 'rent',
