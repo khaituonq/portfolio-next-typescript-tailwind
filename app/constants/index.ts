@@ -54,15 +54,15 @@ const projects = [
   //   project_link: "https://wall-store.vercel.app/",
   //   order: 1
   // },
-  {
-    name: "My Portfolio",
-    description: "This webpage serves as my online resume and contains details about my job and contact information.",
-    tagsId: ['html', 'css', 'javascript', 'next_js', 'react_js', 'tailwind_css', 'typescript'],
-    image: 'my-portfolio',
-    source_code_link: "https://github.com/khaituonq/portfolio-next-typescript-tailwind",
-    project_link: "https://portfolio-next-typescript-tailwind-fawn.vercel.app/",
-    order: 4
-  },
+  // {
+  //   name: "My Portfolio",
+  //   description: "This webpage serves as my online resume and contains details about my job and contact information.",
+  //   tagsId: ['html', 'css', 'javascript', 'next_js', 'react_js', 'tailwind_css', 'typescript'],
+  //   image: 'my-portfolio',
+  //   source_code_link: "https://github.com/khaituonq/portfolio-next-typescript-tailwind",
+  //   project_link: "https://portfolio-next-typescript-tailwind-fawn.vercel.app/",
+  //   order: 4
+  // },
   {
     name: "Rent",
     description: "This website allows for online booking and renting, it includes features like adding rental homes to favourites, deleting them, creating new rentals, and making bookings.",
